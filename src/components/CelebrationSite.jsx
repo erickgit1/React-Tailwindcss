@@ -160,13 +160,7 @@ const CelebrationSite = () => {
           }} className="w-full max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3"><Music className="text-purple-400" /> Para Sempre Com Você</h2>
               <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl border-2 border-purple-500/50 mb-8">
-                 <ReactPlayer
-                    className="react-player"
-                    url="https://www.youtube.com/watch?v=is4zT3bIuFk"
-                    width="100%"
-                    height="100%"
-                    controls={true}
-                />
+                
               </div>
               <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-pink-500/30">
                 <p className="text-base md:text-lg text-gray-200 leading-relaxed">Meu amor, cada segundo ao seu lado é um presente. Nesses três meses, você transformou meu mundo em um lugar mais brilhante e cheio de amor. Esta música é só um pequeno lembrete de tudo que eu sinto e de tudo que eu quero viver com você: para sempre. Você é minha melodia favorita, meu porto seguro, meu amor ate amo muito muitooo.</p>
