@@ -223,7 +223,7 @@ const Quiz = ({ onComplete, onReset }) => {
 
         {currentStep === 'firstEncounter' && renderInputStep('firstEncounter', 'Quase lá...', 'Qual foi o lugar do nosso primeiro encontro?', 'firstEncounter', handleEncounterSubmit)}
         
-        {currentStep === 'petName' && renderInputStep('petName', 'Última pergunta!', 'Qual é o nome do nosso foginho?', 'petName', handlePetNameSubmit)}
+        {currentStep === 'petName' && renderInputStep('petName', 'Última pergunta!', 'Qual é o nome do nosso foguinho?', 'petName', handlePetNameSubmit)}
 
         {currentStep === 'success' && (
           <motion.div key="success" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="text-center">
