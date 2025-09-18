@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.letter-animation {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.letter-animation:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day {
+  @apply w-10 h-10 flex items-center justify-center rounded-lg cursor-pointer transition-all duration-200;
+  @apply hover:bg-pink-600 hover:scale-110;
+}
+
+.calendar-day.selected {
+  @apply bg-pink-500 text-white scale-110;
+}
+
+.calendar-day.other-month {
+  @apply text-gray-600 cursor-not-allowed;
+}
+
+.thinking-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.emoji-float {
+  animation: float 4s ease-in-out forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
